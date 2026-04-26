@@ -44,4 +44,12 @@ jobs:
         run: pip install -r requirements.txt
       - name: Run Python Application
         run: python ./app.py
-      
+
+  task-5:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create a folder and a file
+        run: |
+          mkdir test-folder
+          echo "Hello from inside a file!" > test-folder/file.txt
+          ls -la test-folder
