@@ -31,7 +31,7 @@ jobs:
       run: sh './script.sh'
 
   task-4:
-    runs-on: python:3.8
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4 
