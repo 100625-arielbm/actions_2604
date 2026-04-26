@@ -9,5 +9,5 @@ jobs:
   first-run:
     runs-on: ubuntu-latest
     steps:
-      -name: Print Hello world
+      - name: Print Hello world
         run: echo "Hello world"
