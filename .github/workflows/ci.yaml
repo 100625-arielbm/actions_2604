@@ -6,7 +6,7 @@ on:
       - task_1
 
 jobs:
-  first-run
+  first-run:
     runs-on: ubuntu-latest
     steps:
       -name: Print Hello world
