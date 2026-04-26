@@ -22,5 +22,5 @@ jobs:
       - name: list
         run: ls -la
       - name: Exec Script
-        run: sh './script.sh
+        run: sh './script.sh'
       
