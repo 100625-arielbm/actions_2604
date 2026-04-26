@@ -53,3 +53,12 @@ jobs:
           mkdir test-folder
           echo "Hello from inside a file!" > test-folder/file.txt
           ls -la test-folder
+
+
+  task-6:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4 
+      - name: Build Docker Image
+        run: docker build -t my-python-app .
