@@ -61,7 +61,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4 
       - name: Build Docker Image
-        run: docker build -t my-python-app .
+        run: docker build -t arielbm5911/my-python-app .
 
   task-8:
     runs-on: ubuntu-latest
@@ -76,4 +76,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Docker Push
-        run: docker push my-python-app
+        run: docker push arielbm5911/my-python-app:latest
