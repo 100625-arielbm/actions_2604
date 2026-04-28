@@ -69,11 +69,11 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@v4
         with:
-          username: ${{ vars.DOCKERHUB_USERNAME }}
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
   task-9:
     runs-on: ubuntu-latest
     steps:
       - name: Docker Push
-        run: docker push my-python-app:latest
+        run: docker push my-python-app
