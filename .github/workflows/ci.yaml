@@ -74,7 +74,7 @@ jobs:
 
   task-9:
     runs-on: ubuntu-latest
-    depends-on: task-8
+    needs: task-8
     steps:
       - name: Docker Push
         run: docker push arielbm5911/my-python-app
