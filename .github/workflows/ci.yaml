@@ -76,4 +76,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Docker Push
-        run: docker push arielbm5911/my-python-app:latest
+        run: docker push arielbm5911/my-python-app
